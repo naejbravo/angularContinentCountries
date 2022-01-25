@@ -1,0 +1,6 @@
+<div *ngIf="country.length" class="container">
+  <div *ngFor="let item of country" class="country" routerLink="{{ item._id }}">
+    <h6>{{ item.name }}</h6>
+    <img src="{{ item.img }}" alt="" />
+  </div>
+</div>

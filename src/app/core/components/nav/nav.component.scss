@@ -1,0 +1,25 @@
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    li {
+      padding: 10px;
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.5rem;
+        color: #272343;
+        &:hover {
+          color: #ff8906;
+        }
+      }
+    }
+  }
+}
