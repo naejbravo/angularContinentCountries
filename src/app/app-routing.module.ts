@@ -8,12 +8,12 @@ const routes: Routes = [
       import('./pages/home/home.module').then(m => m.HomeModule)
   },
   {
-    path: `continents`,
+    path: `continent`,
     loadChildren: () =>
       import('./pages/continent/continent.module').then(m => m.ContinentModule),
   },
   {
-    path: `countries`,
+    path: `country`,
     loadChildren: () =>
       import('./pages/country/country.module').then(m => m.CountryModule),
   },
