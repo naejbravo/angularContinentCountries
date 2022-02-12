@@ -3,4 +3,9 @@ export interface ContinentInterface {
   id: number;
   name: string;
   img: string;
+  area: string;
+  population: string;
+  density: string;
+  subdivisions:string;
+  timeZone:string;
 }
