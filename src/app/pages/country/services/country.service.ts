@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class CountryService {
-  public countryURL: string = 'https://continents-country-api.vercel.app/api/countries';
+  public countryURL: string = 'https://continents-country-api.vercel.app/api/country';
   constructor(private httpClient: HttpClient) {}
   public getAllCountries() {
     return this.httpClient.get(this.countryURL);
