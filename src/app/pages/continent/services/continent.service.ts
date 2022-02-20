@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root',
 })
 export class ContinentService {
-  public continentURL: string = "http://localhost:8000/api/continents";
+  public continentURL: string = "https://continents-country-api.vercel.app/api/continents";
   constructor(private httpClient: HttpClient) {}
   // 'https://continents-country-api.vercel.app/api/continents'
   public getAllContinents() {
