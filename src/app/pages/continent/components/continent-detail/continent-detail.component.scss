@@ -17,6 +17,17 @@
         }
         img{
             width: 200px;
+            padding: 50px;
+        }
+        &__data{
+            ul{
+                list-style: none;
+                li{
+                    padding: 10px;
+                    text-align: center;
+                }
+            }
+            
         }
     }
 }

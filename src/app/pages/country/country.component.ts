@@ -16,13 +16,29 @@ export class CountryComponent implements OnInit {
   ngOnInit(): void {
     this.countryService.getAllCountries().subscribe((data: any) => {
       const apiResults: CountryInterface[] = data;
-      const formattedCountries = apiResults.map(({ _id, id, name, alias, img }) => ({
-        _id,
-        id,
-        name,
-        alias,
-        img,
-      }));
+      const formattedCountries = apiResults.map(
+        ({
+          _id,
+          id,
+          name,
+          alias,
+          img,
+          population,
+          president,
+          currency,
+          continent,
+        }) => ({
+          _id,
+          id,
+          name,
+          alias,
+          img,
+          population,
+          president,
+          currency,
+          continent,
+        })
+      );
       this.country = formattedCountries;
     });
   }

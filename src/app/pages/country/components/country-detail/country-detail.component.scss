@@ -19,6 +19,16 @@
     }
     img {
       width: 200px;
+      padding: 50px;
+    }
+    &__data {
+      ul {
+        list-style: none;
+        text-align: center;
+        li{
+          padding: 10px;
+        }
+      }
     }
   }
 }

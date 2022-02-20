@@ -4,4 +4,8 @@ export interface CountryInterface {
   name: string;
   alias: string;
   img: string;
+  population: string;
+  president: string;
+  currency: string;
+  continent: string;
 }

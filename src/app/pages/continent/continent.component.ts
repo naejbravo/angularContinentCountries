@@ -16,11 +16,16 @@ export class ContinentComponent implements OnInit {
     this.continentService.getAllContinents().subscribe((data: any) => {
       const apiResults: ContinentInterface[] = data;
 
-      const formattedContinents = apiResults.map(({ _id, id, name, img }) => ({
+      const formattedContinents = apiResults.map(({ _id, id, name, img, area, population, density, subdivisions, timeZone  }) => ({
         _id,
         id,
         name,
         img,
+        area,
+        population,
+        density,
+        subdivisions,
+        timeZone
       }));
 
       this.continent = formattedContinents;
